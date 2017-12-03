@@ -49,7 +49,7 @@ imshow(img)
 
 
 
-![png](./readme/output_6_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_6_1.png)
 
 
 As a sidenote, here is a some neat little iPython magic that can be used to increase the resolution of images rendered in the notebook.
@@ -61,7 +61,7 @@ imshow(img)
 ```
 
 
-![png](./readme/output_8_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_8_1.png)
 
 
 ### Step 3: Transforming the image to gray scale
@@ -73,7 +73,7 @@ img_la = Image.open("./img/input/tf_logo.png").convert('LA')
 imshow(img_la)
 ```
 
-![png](./readme/output_10_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_10_1.png)
 
 
 The `get_gray_scale` function define below transforms an image to grayscale by applying a grayscale transformation to each pixel in the your image, and writing those to a new image object
@@ -126,7 +126,7 @@ img_gray = get_gray_scale(img)
 imshow(img_gray)
 ```
 
-![png](./readme/output_14_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_14_1.png)
 
 
 ### Step 4: Thresholding your image to Black and White
@@ -204,7 +204,7 @@ plt.imshow(img_threshold)
 #plt.show()
 ```
 
-![png](./readme/output_18_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_18_1.png)
 
 
 ### Step 5: Regenerating the image with custom characters
@@ -242,7 +242,7 @@ for i in range(0, width):
             ax.annotate('!', xy=(i, height-j), fontsize=8)
 ```
 
-![png](./readme/output_23_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_23_1.png)
 
 
 If you've just ran this analysis, you will notice that it took a while to run. This is because of image is of dimensions 200x200, which means we have to iterate and plot through 40,000 pixel values! Furthermore, the large number of pixels means that the space between neighboring pixels overlap and reduces visibility. Fortunately, we can resolve this issue by simply resizing our image, which can be done in one line of code.
@@ -279,7 +279,7 @@ for i in range(0, height):
             #ax.annotate(counter, xy=(j, i), fontsize=8)
 ```
 
-![png](./readme/output_27_1.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_27_1.png)
 
 
 ### Step 5: Personalizing your img2plot
@@ -306,7 +306,7 @@ for i in range(0, height):
 ```
 
 
-![png](./readme/output_30_0.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_30_0.png)
 
 
 Great! It works, so let's try with some text data now.
@@ -338,7 +338,7 @@ for i in range(0, width):
 ```
 
 
-![png](./readme/output_33_0.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_33_0.png)
 
 
 That looks a little bit confusing, but maybe it will be a little clearer if we use longer strings instead. Let's try again, but this time using the content of Albert Einstein's Wikipedia page.
@@ -374,7 +374,7 @@ for i in range(0, width):
 ```
 
 
-![png](./readme/output_37_0.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_37_0.png)
 
 
 Let's switch the default matplolib style to make things a bit prettier.
@@ -405,5 +405,5 @@ for i in range(0, width):
 ```
 
 
-![png](./readme/output_40_0.png)
+![png](https://github.com/tlfvincent/img2plot/blob/master/img/readme/output_40_0.png)
 
